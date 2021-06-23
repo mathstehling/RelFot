@@ -81,10 +81,9 @@ export default function App() {
       });
   }
 
-  const coordinate = JSON.stringify([
-    location.coords.latitude,
-    location.coords.longitude,
-  ]);
+  const coordinate = JSON.stringify(location);
+  const city = "Entre Rios";
+  const data = "17/06/2021";
 
   return (
     <SafeAreaView style={styles.container}>
@@ -129,14 +128,11 @@ export default function App() {
                 <FontAwesome name="window-close" size={50} color="#FF0000" />
               </TouchableOpacity>
 
-              <TouchableOpacity style={{ margin: 10 }} onPress={savePicture}>
-                <FontAwesome name="upload" size={50} color="#121212" />
-              </TouchableOpacity>
               <TouchableOpacity
                 style={{ margin: 10 }}
                 onPress={captureViewShot}
               >
-                <FontAwesome name="upload" size={50} color="#FF2" />
+                <FontAwesome name="upload" size={50} color="#121212" />
               </TouchableOpacity>
             </View>
             <ViewShot
@@ -158,9 +154,9 @@ export default function App() {
                 }}
                 source={{ uri: capturedPhoto }}
               >
-                <Text style={styles.textData}>16/06/2021</Text>
+                <Text style={styles.textData}>{data}</Text>
                 <Text style={styles.textCoordinate}>{coordinate}</Text>
-                <Text style={styles.textCity}>Entre Rios</Text>
+                <Text style={styles.textCity}>{city}</Text>
               </ImageBackground>
             </ViewShot>
           </View>
