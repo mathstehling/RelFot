@@ -16,7 +16,7 @@ const story = storiesOf("Text", module);
 /*story.addDecorator(getStory => <Container> {getStory()} </Container>);*/
 story.add("Splash", () => (
   <BaseView fullWidth fullHeight align={"center"} justify={"center"}>
-    <Title>{text("Splash", "iNTERPHONE")}</Title>
+    <Title>{text("Splash", "Relatório fotográfico")}</Title>
   </BaseView>
 ));
 
@@ -46,6 +46,6 @@ story.add("InputEmailText", () => (
 
 story.add("TextPlaceholder", () => (
   <BaseView fullWidth fullHeight align={"center"} justify={"center"}>
-    <TextPlaceholder>{text("TextPlaceholder", "Usuário")}</TextPlaceholder>
+    <TextPlaceholder>{text("Usuário")}</TextPlaceholder>
   </BaseView>
 ));

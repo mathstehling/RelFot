@@ -5,7 +5,7 @@ import { TextButton } from "../Text";
 export const LargeButton = () => {
   return (
     <BaseTouch width={312} height={57} br={36} bg={"selected"}>
-      <TextButton>{"Entrar"}</TextButton>
+      <TextButton>Entrar</TextButton>
     </BaseTouch>
   );
 };

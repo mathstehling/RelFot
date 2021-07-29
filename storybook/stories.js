@@ -1,2 +1,4 @@
 import "../src/components/atoms/Text/index.stories";
 import "../src/components/atoms/Button/index.stories";
+import "../src/components/organisms/SplashScreen/index.stories";
+import "../src/components/molecules/Input/index.stories";
